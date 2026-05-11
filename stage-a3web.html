@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stage A3 WEB – Samuel Aubron</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">SA<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="skills.html">Compétences</a></li>
+    <li><a href="stages.html">Stages</a></li>
+    <li><a href="projects.html">Projets</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Me contacter</a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="skills.html">Compétences</a></li>
+    <li><a href="stages.html">Stages</a></li>
+    <li><a href="projects.html">Projets</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<div class="page-wrapper">
+
+  <!-- Hero avec bannière photo -->
+  <div class="stage-detail-hero">
+    <img src="assets/images/A3web_entreprise.webp" alt="A3 WEB" class="stage-detail-hero-img" />
+    <div class="stage-detail-hero-overlay">
+      <div class="container">
+        <div class="breadcrumb breadcrumb-light">
+          <a href="index.html">Accueil</a><span>/</span>
+          <a href="stages.html">Stages</a><span>/</span>
+          <span>A3 WEB</span>
+        </div>
+        <h1 class="reveal-up">Stage <em>A3 WEB</em></h1>
+        <div class="stage-detail-pills reveal-up" style="--d:.1s">
+          <span>Janvier – Février 2026</span>
+          <span>6 semaines</span>
+          <span>La Séguinière (49)</span>
+          <span>Stage 2</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-detail">
+    <div class="container">
+
+      <!-- Présentation -->
+      <div class="detail-section reveal-up">
+        <div class="section-label">L'entreprise</div>
+        <h2>A3 WEB</h2>
+        <div class="stage-company-text">
+          <p>
+            A3 WEB est une agence web basée à La Séguinière, en Maine-et-Loire (49). Elle accompagne ses clients
+            dans la création, la refonte et la maintenance de sites internet, ainsi que dans l'intégration de
+            solutions digitales sur mesure. L'agence travaille principalement sous <strong>WordPress</strong>
+            et propose des prestations de développement back-end, d'automatisation et d'intégration d'API tierces.
+          </p>
+          <p>
+            Durant ce stage de 6 semaines, j'ai intégré l'équipe technique et participé activement à plusieurs
+            projets clients en cours, intervenant aussi bien sur la maintenance que sur le développement de
+            nouvelles fonctionnalités et l'intégration d'API externes.
+          </p>
+        </div>
+        <div class="detail-tags" style="margin-top:20px;">
+          <span class="tag">WordPress</span>
+          <span class="tag">PHP</span>
+          <span class="tag pink">API Slack</span>
+          <span class="tag pink">API Wrike</span>
+          <span class="tag">GitLab</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">ACF</span>
+        </div>
+      </div>
+
+      <!-- Bloc tâche 1 : Maintenance WordPress -->
+      <div class="stage-task reveal-up" style="--d:.1s">
+        <div class="stage-task-head">
+          <span class="stage-task-num">01</span>
+          <h3>Maintenance WordPress</h3>
+        </div>
+        <div class="stage-task-body">
+          <div class="stage-task-text">
+            <ul>
+              <li><strong>Mises à jour du core</strong> — mise à jour de WordPress et de ses extensions sur plusieurs sites clients en production</li>
+              <li><strong>Corrections post-MAJ</strong> — identification et résolution des conflits de plugins et problèmes d'affichage apparus après les mises à jour</li>
+              <li><strong>Suivi des procédures</strong> — respect des procédures internes de maintenance et rédaction de comptes-rendus d'intervention</li>
+            </ul>
+          </div>
+          <div class="stage-task-shot">
+            <img src="assets/images/MAJ_WP.png" alt="Interface WordPress — mises à jour" />
+            <p class="stage-shot-caption">Interface WordPress : tableau de bord des mises à jour du core et des extensions</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloc tâche 2 : Automatisation assignation tickets -->
+      <div class="stage-task reveal-up" style="--d:.15s">
+        <div class="stage-task-head">
+          <span class="stage-task-num">02</span>
+          <h3>Back-end — Automatisation de l'assignation des tickets</h3>
+        </div>
+        <div class="stage-task-body">
+          <div class="stage-task-text">
+            <ul>
+              <li><strong>Script PHP d'assignation automatique</strong> — développement d'un script attribuant les tickets entrants au bon collaborateur selon des règles métier définies (type, produit, priorité)</li>
+              <li><strong>Intégration dans WordPress</strong> — intégration via hooks PHP (functions.php) dans le système de tickets existant</li>
+              <li><strong>Relance automatique J+7</strong> — déclenchement automatique d'un e-mail de relance si un ticket reste sans réponse après 7 jours</li>
+            </ul>
+          </div>
+          <div class="stage-task-shot">
+            <img src="assets/images/Code_assignement_ticket.png" alt="Code PHP d'assignation automatique des tickets" />
+            <p class="stage-shot-caption">Extrait du script PHP : logique d'assignation automatique des tickets selon les règles métier</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloc tâche 3 : API Slack & Wrike -->
+      <div class="stage-task reveal-up" style="--d:.2s">
+        <div class="stage-task-head">
+          <span class="stage-task-num">03</span>
+          <h3>Intégrations API — Slack &amp; Wrike</h3>
+        </div>
+        <div class="stage-task-body">
+          <div class="stage-task-text">
+            <ul>
+              <li><strong>Intégration API Slack</strong> — mise en place de notifications automatiques dans un canal Slack à chaque création ou mise à jour de ticket client</li>
+              <li><strong>Intégration API Wrike</strong> — synchronisation des tickets entre le système client et l'outil de gestion de projet Wrike</li>
+              <li><strong>Gestion des erreurs</strong> — implémentation d'un mode test pour rediriger les messages vers un destinataire de test sans affecter la production</li>
+            </ul>
+          </div>
+          <div class="stage-task-shot">
+            <img src="assets/images/API_slack.png" alt="Code PHP de l'intégration API Slack" />
+            <p class="stage-shot-caption">Extrait du code : fonction d'envoi de message Slack avec gestion du mode test</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloc tâche 4 : Front-end & Refonte -->
+      <div class="stage-task reveal-up" style="--d:.25s">
+        <div class="stage-task-head">
+          <span class="stage-task-num">04</span>
+          <h3>Front-end &amp; Refonte graphique</h3>
+        </div>
+        <div class="stage-task-body">
+          <div class="stage-task-text">
+            <ul>
+              <li><strong>Corrections de mise en page</strong> — responsive, espacements et typographies sur différents sites clients</li>
+              <li><strong>Zone d'alerte ACF</strong> — création d'un bloc d'alerte personnalisable via Advanced Custom Fields, permettant aux administrateurs de diffuser des messages d'incident en temps réel</li>
+              <li><strong>Refonte graphique</strong> — participation à la refonte complète du site client : nouvelle identité visuelle, navigation repensée et interface modernisée</li>
+            </ul>
+          </div>
+          <div class="stage-task-shot">
+            <img src="assets/images/Avant_refonte_site.png" alt="Site client avant la refonte graphique" />
+            <p class="stage-shot-caption">Avant la refonte — interface d'origine du site client</p>
+            <img src="assets/images/Apres_refonte_site.png" alt="Site client après la refonte graphique" style="margin-top:12px;" />
+            <p class="stage-shot-caption">Après la refonte — nouvelle identité avec zone d'alerte ACF intégrée</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-up" style="--d:.3s; margin-top:32px;">
+        <a href="stages.html" class="btn-outline">← Retour aux stages</a>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-logo">SA<span>.</span></div>
+    <p>© 2026 Samuel Aubron – Développeur Web &amp; Applications</p>
+    <div class="footer-links">
+      <a href="mailto:aubronsamuel06@gmail.com">Email</a>
+      <a href="tel:+33787052349">Tél</a>
+      <a href="https://www.linkedin.com/in/samuel-aubron-757a1b2b6/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Samuel240506" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

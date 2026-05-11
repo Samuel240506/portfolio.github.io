@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AP 5 – SIGEANSUD · Samuel Aubron</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">SA<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="skills.html">Compétences</a></li>
+    <li><a href="stages.html">Stages</a></li>
+    <li><a href="projects.html">Projets</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Me contacter</a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="skills.html">Compétences</a></li>
+    <li><a href="stages.html">Stages</a></li>
+    <li><a href="projects.html">Projets</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<div class="page-wrapper">
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a><span>/</span>
+        <a href="projects.html">Projets</a><span>/</span>
+        <span>AP 5</span>
+      </div>
+      <h1 class="reveal-up"><em>SIGEANSUD</em></h1>
+      <p class="reveal-up" style="--d:.1s">AP 5 · Gestion des repas du parc animalier · Symfony 7 + Android + API REST</p>
+    </div>
+  </div>
+
+  <div class="project-detail">
+    <div class="container">
+      <div class="project-detail-grid">
+
+        <div>
+
+          <div class="detail-section reveal-up">
+            <h2>Contexte du projet</h2>
+            <p>
+              Le projet SIGEANSUD consiste à développer un applicatif complet pour gérer les repas des
+              animaux du <strong>parc animalier SIGEANSUD</strong>. L'objectif est de tracer tous les repas
+              donnés aux animaux et de gérer les menus par espèce, avec deux interfaces distinctes :
+              une application mobile pour les soignants et un back-office web pour les gestionnaires.
+            </p>
+            <p>
+              Réalisé en équipe de quatre (Mateo, Samuel, Clayton et Ewen) selon une approche
+              <strong>Agile avec Trello</strong>, le projet a été déployé sur serveur distant <strong>IONOS</strong>.
+            </p>
+          </div>
+
+          <div class="detail-section reveal-up" style="--d:.1s">
+            <h2>Applications développées</h2>
+            <ul>
+              <li><strong>Back-office web (Symfony 7)</strong> — interface d'administration pour les gestionnaires : gestion des soignants et de leurs espèces affectées, gestion des menus par espèce, consultation des repas tracés · tableau de bord avec stats (soignants, espèces, menus)</li>
+              <li><strong>Application mobile Android (Java)</strong> — interface pour les soignants : saisie des heures et quantités des repas donnés aux animaux des espèces affectées · stockage local SQLite du profil soignant</li>
+              <li><strong>API REST (MySQL)</strong> — backend commun aux deux applications : URIs pour accéder aux données depuis le front web et l'app mobile · déployée sur IONOS avec base MySQL</li>
+            </ul>
+          </div>
+
+          <div class="detail-section reveal-up" style="--d:.12s">
+            <h2>Ma contribution</h2>
+            <p style="color:var(--text-muted); margin-bottom:24px;">
+              Avec Matéo, j'ai développé l'application mobile Android destinée aux soignants du parc : saisie des repas, consultation des animaux par espèce, visualisation des menus du jour et historique des repas donnés.
+            </p>
+            <div class="contrib-screenshot-item contrib-mobile-wrap">
+              <div class="contrib-screenshot-frame contrib-mobile-frame">
+                <img src="assets/images/application_sigeansud.png" alt="Application mobile SIGEANSUD – Interface soignant" />
+              </div>
+              <div class="contrib-screenshot-caption">
+                <span class="contrib-tag">Application mobile Android</span>
+                <strong>Interface soignant – SIGEANSUD</strong>
+                <p>Écran d'accueil de l'application Android : menu principal permettant au soignant de saisir un repas, consulter les animaux par espèce affectée, voir les menus du jour et accéder à l'historique des repas. Développé en Java avec Android Studio, connecté à l'API REST via MySQL IONOS.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="detail-section reveal-up" style="--d:.15s">
+            <h2>Architecture technique</h2>
+            <ul>
+              <li><strong>Symfony 7</strong> — back-office web, déployé sur IONOS</li>
+              <li><strong>Android Studio / Java</strong> — application mobile pour smartphones</li>
+              <li><strong>API REST</strong> — point d'entrée unique pour le web et le mobile, spécifiée et documentée</li>
+              <li><strong>MySQL (IONOS)</strong> — base de données distante partagée via l'API</li>
+              <li><strong>SQLite</strong> — base locale sur l'app mobile pour stocker le profil soignant</li>
+              <li><strong>MCD + diagramme de classes</strong> — modélisation complète des données</li>
+              <li><strong>MOT / diagramme de séquence</strong> — modélisation des flux entre front, back et API</li>
+            </ul>
+          </div>
+
+          <div class="detail-section reveal-up" style="--d:.2s">
+            <h2>Gestion de projet</h2>
+            <ul>
+              <li><strong>Méthode Agile</strong> — planification par sprints, répartition des tâches par étudiant</li>
+              <li><strong>Trello</strong> — suivi de l'avancement et collaboration</li>
+              <li><strong>Séances</strong> — 5/12 · 12/12 · 6/03 · 13/03 · 20/03 · 27/03 · 3/04 · Rendu doc : 7/04 · Oral : 10/04</li>
+              <li><strong>Livrables</strong> — application Android, back-office Symfony, API REST, documentation technique complète (MCD, diagrammes, spécification API, plans de tests, documentation utilisateur)</li>
+            </ul>
+          </div>
+
+          <div class="reveal-up" style="--d:.25s; margin-top:32px;">
+            <a href="projects.html" class="btn-outline">← Retour aux projets</a>
+          </div>
+
+        </div>
+
+        <div class="detail-sidebar reveal-up" style="--d:.15s">
+          <div class="detail-card">
+            <div class="detail-card-title">AP 5 — SIGEANSUD</div>
+
+            <div class="detail-meta">
+              <div class="detail-meta-item">
+                <span class="detail-meta-icon">📅</span>
+                <div>
+                  <div class="detail-meta-key">Oral</div>
+                  <div class="detail-meta-val">10 avril 2026</div>
+                </div>
+              </div>
+              <div class="detail-meta-item">
+                <span class="detail-meta-icon">🏫</span>
+                <div>
+                  <div class="detail-meta-key">Formation</div>
+                  <div class="detail-meta-val">ESUPEC · BTS SIO SLAM</div>
+                </div>
+              </div>
+              <div class="detail-meta-item">
+                <span class="detail-meta-icon">🌐</span>
+                <div>
+                  <div class="detail-meta-key">Déploiement</div>
+                  <div class="detail-meta-val">IONOS (back-office + API)</div>
+                </div>
+              </div>
+              <div class="detail-meta-item">
+                <span class="detail-meta-icon">👥</span>
+                <div>
+                  <div class="detail-meta-key">Équipe</div>
+                  <div class="detail-meta-val">Mateo<br/>Samuel Aubron<br/>Clayton<br/>Ewen</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-tags">
+              <span class="tag pink">Symfony 7</span>
+              <span class="tag pink">Android</span>
+              <span class="tag pink">API REST</span>
+              <span class="tag">Java</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">Trello</span>
+              <span class="tag">IONOS</span>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-logo">SA<span>.</span></div>
+    <p>© 2026 Samuel Aubron – Développeur Web &amp; Applications</p>
+    <div class="footer-links">
+      <a href="mailto:aubronsamuel06@gmail.com">Email</a>
+      <a href="tel:+33787052349">Tél</a>
+      <a href="https://www.linkedin.com/in/samuel-aubron-757a1b2b6/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Samuel240506" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+

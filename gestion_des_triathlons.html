@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AP 4 – Gestion des triathlons · Samuel Aubron</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">SA<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="skills.html">Compétences</a></li>
+    <li><a href="stages.html">Stages</a></li>
+    <li><a href="projects.html">Projets</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Me contacter</a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="skills.html">Compétences</a></li>
+    <li><a href="stages.html">Stages</a></li>
+    <li><a href="projects.html">Projets</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<div class="page-wrapper">
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a><span>/</span>
+        <a href="projects.html">Projets</a><span>/</span>
+        <span>AP 4</span>
+      </div>
+      <h1 class="reveal-up">Gestion des <em>triathlons</em></h1>
+      <p class="reveal-up" style="--d:.1s">AP 4 · Application web FFTRI · Architecture MVC</p>
+    </div>
+  </div>
+
+  <div class="project-detail">
+    <div class="container">
+      <div class="project-detail-grid">
+
+        <div>
+
+          <div class="detail-section reveal-up">
+            <h2>Présentation du projet</h2>
+            <p>
+              Dans le cadre de l'AP 4, notre équipe a développé une application web complète de gestion
+              pour la <strong>FFTRI</strong> (Fédération Française de Triathlon). L'objectif était de
+              centraliser la gestion des clubs affiliés, des licenciés et des triathlons à venir au sein
+              d'une interface d'administration sécurisée.
+            </p>
+            <p>
+              L'application repose sur une <strong>architecture MVC</strong> (Modèle-Vue-Contrôleur) en
+              PHP natif, avec une gestion de version via GitHub et un suivi de projet sur Trello.
+              Le projet a été réalisé en équipe : Samuel Aubron, Noah Herpin, Yasmin Khanjaoui et Matéo.
+            </p>
+          </div>
+
+          <div class="detail-section reveal-up" style="--d:.1s">
+            <h2>Modules de l'application</h2>
+            <ul>
+              <li><strong>Tableau de bord</strong> — vue d'ensemble avec statistiques en temps réel : clubs affiliés, licenciés actifs, triathlons à venir · affichage des derniers clubs ajoutés</li>
+              <li><strong>Clubs</strong> — CRUD complet : liste, fiche détaillée, création, modification, suppression · informations : nom, ville, téléphone, licenciés</li>
+              <li><strong>Licenciés</strong> — gestion des licenciés avec 2 types de licence : club ou individuelle</li>
+              <li><strong>Triathlons</strong> — gestion des épreuves : nom, type, lieu, date · organisation des inscriptions · 2 profils : Responsable de club et Gestionnaire FFTRI</li>
+              <li><strong>Paramètres</strong> — mise à jour du profil, changement de mot de passe, préférences et notifications</li>
+            </ul>
+          </div>
+
+          <div class="detail-section reveal-up" style="--d:.12s">
+            <h2>Ma contribution</h2>
+            <p style="color:var(--text-muted); margin-bottom:24px;">
+              J'ai pris en charge deux réalisations clés : la conception de la maquette graphique de l'application et le développement de la page de gestion des clubs avec son CRUD complet.
+            </p>
+            <div class="contrib-screenshots">
+
+              <div class="contrib-grid-2">
+
+                <div class="contrib-screenshot-item">
+                  <div class="contrib-screenshot-frame">
+                    <img src="assets/images/maquette_triathlons.png" alt="Maquette FFTRI – Gestion des triathlons" />
+                  </div>
+                  <div class="contrib-screenshot-caption">
+                    <span class="contrib-tag">Design UI</span>
+                    <strong>Maquette de l'application</strong>
+                    <p>Conception de la maquette graphique de l'interface d'administration FFTRI : sidebar de navigation, tableau de bord et gabarit des pages avant développement.</p>
+                  </div>
+                </div>
+
+                <div class="contrib-screenshot-item">
+                  <div class="contrib-screenshot-frame">
+                    <img src="assets/images/club_triathlons.png" alt="Gestion des clubs – FFTRI" />
+                  </div>
+                  <div class="contrib-screenshot-caption">
+                    <span class="contrib-tag">Développement PHP MVC</span>
+                    <strong>Page Gestion des clubs</strong>
+                    <p>Développement de la page listant les clubs affiliés (nom, ville, téléphone, email, nombre de licenciés) avec actions d'édition et de suppression. CRUD complet intégré dans l'architecture MVC.</p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="detail-section reveal-up" style="--d:.15s">
+            <h2>Architecture technique</h2>
+            <ul>
+              <li><strong>Pattern MVC</strong> — séparation stricte Modèle / Vue / Contrôleur pour un code maintenable</li>
+              <li><strong>Routage</strong> — système de routing via paramètres GET (module + action) : <code>/index.php?module=clubs&amp;action=create</code></li>
+              <li><strong>Authentification</strong> — accès sécurisé obligatoire, sessions PHP, routes publiques limitées à login/logout</li>
+              <li><strong>Base de données</strong> — MySQL avec requêtes préparées</li>
+              <li><strong>Interface</strong> — sidebar de navigation fixe, design professionnel responsive, maquettes réalisées sous Canva</li>
+            </ul>
+          </div>
+
+          <div class="detail-section reveal-up" style="--d:.2s">
+            <h2>Routes de l'application</h2>
+            <ul>
+              <li><strong>Authentification</strong> — <code>/index.php?action=login</code> · <code>authenticate</code> · <code>logout</code></li>
+              <li><strong>Dashboard</strong> — <code>/index.php?module=dashboard</code></li>
+              <li><strong>Clubs</strong> — <code>module=clubs</code> + actions : show, create, edit, delete</li>
+              <li><strong>Licenciés</strong> — <code>module=licencies</code></li>
+              <li><strong>Triathlons</strong> — <code>module=triathlons</code></li>
+              <li><strong>Paramètres</strong> — <code>module=settings</code> + updateProfile, changePassword, updatePreferences</li>
+            </ul>
+          </div>
+
+          <div class="reveal-up" style="--d:.25s; margin-top:32px;">
+            <a href="projects.html" class="btn-outline">← Retour aux projets</a>
+          </div>
+
+        </div>
+
+        <div class="detail-sidebar reveal-up" style="--d:.15s">
+          <div class="detail-card">
+            <div class="detail-card-title">AP 4 — FFTRI Triathlons</div>
+
+            <div class="detail-meta">
+              <div class="detail-meta-item">
+                <span class="detail-meta-icon">🏫</span>
+                <div>
+                  <div class="detail-meta-key">Formation</div>
+                  <div class="detail-meta-val">ESUPEC · BTS SIO SLAM</div>
+                </div>
+              </div>
+              <div class="detail-meta-item">
+                <span class="detail-meta-icon">🏗️</span>
+                <div>
+                  <div class="detail-meta-key">Architecture</div>
+                  <div class="detail-meta-val">MVC — PHP natif</div>
+                </div>
+              </div>
+              <div class="detail-meta-item">
+                <span class="detail-meta-icon">👥</span>
+                <div>
+                  <div class="detail-meta-key">Équipe</div>
+                  <div class="detail-meta-val">Samuel Aubron<br/>Noah Herpin<br/>Yasmin Khanjaoui<br/>Matéo</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-tags">
+              <span class="tag pink">PHP</span>
+              <span class="tag pink">MySQL</span>
+              <span class="tag pink">MVC</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">Trello</span>
+              <span class="tag">Canva</span>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-logo">SA<span>.</span></div>
+    <p>© 2026 Samuel Aubron – Développeur Web &amp; Applications</p>
+    <div class="footer-links">
+      <a href="mailto:aubronsamuel06@gmail.com">Email</a>
+      <a href="tel:+33787052349">Tél</a>
+      <a href="https://www.linkedin.com/in/samuel-aubron-757a1b2b6/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Samuel240506" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+

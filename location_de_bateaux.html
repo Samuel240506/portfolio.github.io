@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AP 1.2 – Location de bateaux · Samuel Aubron</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">SA<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="skills.html">Compétences</a></li>
+    <li><a href="stages.html">Stages</a></li>
+    <li><a href="projects.html">Projets</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Me contacter</a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="skills.html">Compétences</a></li>
+    <li><a href="stages.html">Stages</a></li>
+    <li><a href="projects.html">Projets</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<div class="page-wrapper">
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Accueil</a><span>/</span>
+        <a href="projects.html">Projets</a><span>/</span>
+        <span>AP 1.2</span>
+      </div>
+      <h1 class="reveal-up">Location de <em>bateaux</em></h1>
+      <p class="reveal-up" style="--d:.1s">AP 1.2 · Site web MSN Boats · Les Sables d'Olonne</p>
+    </div>
+  </div>
+
+  <div class="project-detail">
+    <div class="container">
+      <div class="project-detail-grid">
+
+        <div>
+
+          <div class="detail-section reveal-up">
+            <h2>Présentation du projet</h2>
+            <p>
+              Dans le cadre de l'AP 1.2 de première année de BTS SIO, nous avons conçu et développé un site web
+              complet de location de bateaux pour la société fictive <strong>MSN Boats</strong>, basée au
+              port des <strong>Sables d'Olonne (85)</strong>. Le projet a été réalisé en équipe de trois :
+              Mathis Rouvreau, Samuel Aubron et Noah Herpin.
+            </p>
+            <p>
+              Le site propose une expérience complète pour les utilisateurs : consultation de la flotte,
+              visualisation des tarifs, réservation en ligne et prise de contact, le tout avec une interface
+              moderne incluant un effet parallax et une barre de progression au scroll.
+            </p>
+          </div>
+
+          <div class="detail-section reveal-up" style="--d:.1s">
+            <h2>Pages réalisées</h2>
+            <ul>
+              <li><strong>Accueil</strong> — hero avec effet parallax, section "Qui sommes-nous", témoignages clients, intégration Google Maps, compteur de visites (localStorage)</li>
+              <li><strong>Nos bateaux</strong> — catalogue de 8 embarcations (Yacht ×2, Catamaran, Voilier, Bateau de plaisance, Hors-bord, Pédalolo, Jet Ski) avec fiches détaillées</li>
+              <li><strong>Tarifs</strong> — grille de prix par embarcation (de 40 €/j pour le pédalolo à 850 €/j pour le catamaran)</li>
+              <li><strong>Contact</strong> — formulaire de contact + coordonnées (18 Quai de la Mer, 85100 Les Sables d'Olonne)</li>
+              <li><strong>Réservation</strong> — formulaire avec sélection du bateau, date et durée de location</li>
+              <li><strong>Pages bateau détaillées</strong> — galerie photos, caractéristiques, description et audio descriptif</li>
+            </ul>
+          </div>
+
+          <div class="detail-section reveal-up" style="--d:.12s">
+            <h2>Ma contribution</h2>
+            <p style="color:var(--text-muted); margin-bottom:24px;">
+              J'ai personnellement développé deux parties clés du site : la page catalogue de la flotte et les pages de détail de chaque embarcation.
+            </p>
+            <div class="contrib-screenshots">
+
+              <div class="contrib-screenshot-item">
+                <div class="contrib-screenshot-frame">
+                  <img src="assets/images/screen_msn_boat_1.png" alt="Page Nos Bateaux – MSN Boats" />
+                </div>
+                <div class="contrib-screenshot-caption">
+                  <span class="contrib-tag">Page catalogue</span>
+                  <strong>Nos Bateaux</strong>
+                  <p>Affichage de la flotte complète de 8 embarcations avec photos, caractéristiques principales et liens vers les fiches détaillées. Mise en page en grille responsive.</p>
+                </div>
+              </div>
+
+              <div class="contrib-screenshot-item">
+                <div class="contrib-screenshot-frame">
+                  <img src="assets/images/screen_msn_boat_2.png" alt="Page détail bateau – MSN Boats" />
+                </div>
+                <div class="contrib-screenshot-caption">
+                  <span class="contrib-tag">Pages détaillées</span>
+                  <strong>Fiche individuelle de chaque bateau</strong>
+                  <p>Page générée pour chaque embarcation : caractéristiques complètes (capacité, longueur, équipage, équipements, prix/jour), description et lecteur audio HTML5 descriptif.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="detail-section reveal-up" style="--d:.15s">
+            <h2>Fonctionnalités techniques</h2>
+            <ul>
+              <li><strong>Effet parallax</strong> — section hero avec fond fixe en CSS (background-attachment: fixed)</li>
+              <li><strong>Barre de progression</strong> — indicateur de scroll en JavaScript mis à jour en temps réel</li>
+              <li><strong>Compteur de visites</strong> — stockage et incrémentation via localStorage</li>
+              <li><strong>Google Maps</strong> — carte interactive intégrée via iFrame pour localiser le port</li>
+              <li><strong>Audio descriptif</strong> — lecteur audio HTML5 sur les pages de détail des bateaux</li>
+              <li><strong>Design responsive</strong> — grilles CSS adaptatives avec media queries (mobile/tablette/desktop)</li>
+            </ul>
+          </div>
+
+          <div class="detail-section reveal-up" style="--d:.2s">
+            <h2>Flotte disponible</h2>
+            <ul>
+              <li><strong>Yacht de Luxe 1</strong> — 15 pers. · 25 m · 500 €/j (−10 % à la semaine)</li>
+              <li><strong>Yacht de Luxe 2</strong> — 12 pers. · 30 m · 750 €/j · service restauration inclus</li>
+              <li><strong>Catamaran de Luxe</strong> — 12 pers. · 28 m · 850 €/j</li>
+              <li><strong>Voilier Classique</strong> — 8 pers. · 22 m · 600 €/j</li>
+              <li><strong>Bateau de Plaisance</strong> — 6 pers. · 15 m · 400 €/j</li>
+              <li><strong>Hors-Bord</strong> — 6 pers. · 15 m · 400 €/j</li>
+              <li><strong>Pédalolo</strong> — 4 pers. · 4 m · 40 €/j</li>
+              <li><strong>Jet Ski</strong> — 2 pers. · 400 €/j · arrivage en cours</li>
+            </ul>
+          </div>
+
+          <div class="reveal-up" style="--d:.25s; margin-top:32px;">
+            <a href="projects.html" class="btn-outline">← Retour aux projets</a>
+          </div>
+
+        </div>
+
+        <div class="detail-sidebar reveal-up" style="--d:.15s">
+          <div class="detail-card">
+            <div class="detail-card-title">AP 1.2 — MSN Boats</div>
+
+            <div class="detail-meta">
+              <div class="detail-meta-item">
+                <span class="detail-meta-icon">📅</span>
+                <div>
+                  <div class="detail-meta-key">Période</div>
+                  <div class="detail-meta-val">1ère année BTS SIO</div>
+                </div>
+              </div>
+              <div class="detail-meta-item">
+                <span class="detail-meta-icon">📍</span>
+                <div>
+                  <div class="detail-meta-key">Contexte fictif</div>
+                  <div class="detail-meta-val">Les Sables d'Olonne (85)</div>
+                </div>
+              </div>
+              <div class="detail-meta-item">
+                <span class="detail-meta-icon">🏫</span>
+                <div>
+                  <div class="detail-meta-key">Formation</div>
+                  <div class="detail-meta-val">ESUPEC · BTS SIO SLAM</div>
+                </div>
+              </div>
+              <div class="detail-meta-item">
+                <span class="detail-meta-icon">👥</span>
+                <div>
+                  <div class="detail-meta-key">Équipe</div>
+                  <div class="detail-meta-val">Mathis Rouvreau<br/>Samuel Aubron<br/>Noah Herpin</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-tags">
+              <span class="tag pink">HTML</span>
+              <span class="tag pink">CSS</span>
+              <span class="tag pink">JavaScript</span>
+              <span class="tag">localStorage</span>
+              <span class="tag">Google Maps</span>
+              <span class="tag">Parallax</span>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-logo">SA<span>.</span></div>
+    <p>© 2026 Samuel Aubron – Développeur Web &amp; Applications</p>
+    <div class="footer-links">
+      <a href="mailto:aubronsamuel06@gmail.com">Email</a>
+      <a href="tel:+33787052349">Tél</a>
+      <a href="https://www.linkedin.com/in/samuel-aubron-757a1b2b6/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Samuel240506" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+

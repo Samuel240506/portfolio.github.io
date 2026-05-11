@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compétences – Samuel Aubron</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">SA<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="skills.html">Compétences</a></li>
+    <li><a href="stages.html">Stages</a></li>
+    <li><a href="projects.html">Projets</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Me contacter</a>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="skills.html">Compétences</a></li>
+    <li><a href="stages.html">Stages</a></li>
+    <li><a href="projects.html">Projets</a></li>
+    <li><a href="veille.html">Veille</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<div class="page-wrapper">
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Accueil</a><span>/</span><span>Compétences</span></div>
+      <h1 class="reveal-up">Mon stack <em>technique</em></h1>
+      <p class="reveal-up" style="--d:.1s">Langages, frameworks, outils et certifications acquis en formation et en entreprise.</p>
+      <div class="reveal-up" style="--d:.2s; margin-top:24px;">
+        <a href="assets/docs/Tableau%20de%20comp%C3%A9tences%20-%20Samuel%20(1).xlsx" download="Tableau_de_competences_Samuel.xlsx" class="btn-download">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Télécharger mon tableau de compétences
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills-section">
+    <div class="container">
+
+      <div class="skills-bento">
+
+        <!-- Programmation — large (2 cols) -->
+        <div class="bento-card bento-wide bento-accent-1 reveal-up" style="--d:.05s">
+          <div class="bento-num">01</div>
+          <div class="bento-label">Programmation</div>
+          <div class="bento-tags">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Langages Web — petit (1 col) -->
+        <div class="bento-card bento-accent-2 reveal-up" style="--d:.1s">
+          <div class="bento-num">02</div>
+          <div class="bento-label">Langages Web</div>
+          <div class="bento-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">XML</span>
+          </div>
+        </div>
+
+        <!-- Base de données — petit (1 col) -->
+        <div class="bento-card bento-accent-3 reveal-up" style="--d:.15s">
+          <div class="bento-num">03</div>
+          <div class="bento-label">Base de données</div>
+          <div class="bento-tags">
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Laragon</span>
+          </div>
+        </div>
+
+        <!-- Outils — large (2 cols) -->
+        <div class="bento-card bento-wide bento-accent-1 reveal-up" style="--d:.2s">
+          <div class="bento-num">04</div>
+          <div class="bento-label">Outils &amp; environnements</div>
+          <div class="bento-tags">
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">GitLab</span>
+            <span class="skill-tag">WinSCP</span>
+            <span class="skill-tag">KeePass</span>
+          </div>
+        </div>
+
+        <!-- CMS & ERP — petit (1 col) -->
+        <div class="bento-card bento-accent-2 reveal-up" style="--d:.25s">
+          <div class="bento-num">05</div>
+          <div class="bento-label">CMS &amp; ERP</div>
+          <div class="bento-tags">
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">Hooks PHP</span>
+            <span class="skill-tag">ACF</span>
+            <span class="skill-tag">Odoo</span>
+          </div>
+        </div>
+
+        <!-- IA & API — large (2 cols) -->
+        <div class="bento-card bento-wide bento-accent-3 reveal-up" style="--d:.3s">
+          <div class="bento-num">06</div>
+          <div class="bento-label">IA &amp; Intégrations API</div>
+          <div class="bento-tags">
+            <span class="skill-tag">Slack API</span>
+            <span class="skill-tag">Wrike</span>
+            <span class="skill-tag">Make</span>
+            <span class="skill-tag">Mistral AI</span>
+            <span class="skill-tag">Agent IA</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CERTIFICATIONS -->
+      <div style="margin-top: 60px;">
+        <div class="section-label reveal-up">Certifications obtenues</div>
+        <h2 class="section-title reveal-up" style="--d:.1s">6 certifications validées</h2>
+
+        <div class="certif-carousel-wrapper reveal-up" style="--d:.2s">
+          <button class="certif-arrow certif-arrow-prev" id="certifPrev" aria-label="Précédent">&#8592;</button>
+          <button class="certif-arrow certif-arrow-next" id="certifNext" aria-label="Suivant">&#8594;</button>
+
+          <div class="certif-carousel" id="certifCarousel">
+
+            <!-- PHP & MySQL -->
+            <div class="certif-card">
+              <div class="certif-img">
+                <img src="assets/images/certif/certif_php_mysql.png" alt="Concevez votre site web avec PHP et MySQL – OpenClassrooms" />
+              </div>
+              <div class="certif-body">
+                <span class="certif-platform">OpenClassrooms</span>
+                <h4 class="certif-title">Concevez votre site web avec PHP et MySQL</h4>
+                <p class="certif-desc">Créer des sites web dynamiques avec PHP 8.2 : variables, conditions, formulaires, sessions et interaction avec une base de données MySQL via SQL. Projet fil rouge : une plateforme de partage de recettes.</p>
+                <a href="https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql" class="certif-btn" target="_blank" rel="noopener">Voir la certification</a>
+              </div>
+            </div>
+
+            <!-- C++ -->
+            <div class="certif-card">
+              <div class="certif-img">
+                <img src="assets/images/certif/certif_c++.png" alt="Apprenez à programmer en C++ – OpenClassrooms" />
+              </div>
+              <div class="certif-body">
+                <span class="certif-platform">OpenClassrooms</span>
+                <h4 class="certif-title">Apprenez à programmer en C++</h4>
+                <p class="certif-desc">Fondamentaux du C++ : variables, conditions, boucles, fonctions, tableaux, pointeurs et programmation orientée objet pour créer des programmes évolutifs.</p>
+                <a href="https://openclassrooms.com/fr/courses/1894236-apprenez-a-programmer-en-c" class="certif-btn" target="_blank" rel="noopener">Voir la certification</a>
+              </div>
+            </div>
+
+            <!-- HTML & CSS -->
+            <div class="certif-card">
+              <div class="certif-img">
+                <img src="assets/images/certif/certif_html_css.png" alt="Créez votre site web avec HTML5 et CSS3 – OpenClassrooms" />
+              </div>
+              <div class="certif-body">
+                <span class="certif-platform">OpenClassrooms</span>
+                <h4 class="certif-title">Créez votre site web avec HTML5 et CSS3</h4>
+                <p class="certif-desc">Bases du HTML5 pour structurer le contenu, CSS3 pour la mise en forme, mise en page avancée et design responsive pour des sites adaptés à tous les écrans.</p>
+                <a href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3" class="certif-btn" target="_blank" rel="noopener">Voir la certification</a>
+              </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="certif-card">
+              <div class="certif-img">
+                <img src="assets/images/certif/certif_javascript.png" alt="Apprenez à programmer avec JavaScript – OpenClassrooms" />
+              </div>
+              <div class="certif-body">
+                <span class="certif-platform">OpenClassrooms</span>
+                <h4 class="certif-title">Apprenez à programmer avec JavaScript</h4>
+                <p class="certif-desc">Fondamentaux de JavaScript : manipulation de données, interaction avec une page web via le DOM, gestion des formulaires et construction d'un site dynamique fonctionnel.</p>
+                <a href="https://openclassrooms.com/fr/courses/7696886-apprenez-a-programmer-avec-javascript" class="certif-btn" target="_blank" rel="noopener">Voir la certification</a>
+              </div>
+            </div>
+
+            <!-- Git & GitHub -->
+            <div class="certif-card">
+              <div class="certif-img">
+                <img src="assets/images/certif/certif_git_github.png" alt="Gérez du code avec Git et GitHub – OpenClassrooms" />
+              </div>
+              <div class="certif-body">
+                <span class="certif-platform">OpenClassrooms</span>
+                <h4 class="certif-title">Gérez du code avec Git et GitHub</h4>
+                <p class="certif-desc">Installation et configuration de Git, commandes fondamentales, gestion de dépôts locaux et distants, correction d'erreurs et collaboration en équipe ou sur des projets open-source.</p>
+                <a href="https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github" class="certif-btn" target="_blank" rel="noopener">Voir la certification</a>
+              </div>
+            </div>
+
+            <!-- ChatGPT -->
+            <div class="certif-card">
+              <div class="certif-img">
+                <img src="assets/images/certif/certif_chatgpt.webp" alt="Utilisez ChatGPT pour améliorer votre productivité – OpenClassrooms" />
+              </div>
+              <div class="certif-body">
+                <span class="certif-platform">OpenClassrooms</span>
+                <h4 class="certif-title">Utilisez ChatGPT pour améliorer votre productivité</h4>
+                <p class="certif-desc">Prompt engineering, utilisation de ChatGPT au quotidien, fonctionnalités avancées (analyse de fichiers, agents GPT personnalisés) et applications concrètes pour le développement.</p>
+                <a href="https://openclassrooms.com/fr/courses/8204091-utilisez-chatgpt-pour-ameliorer-votre-productivite" class="certif-btn" target="_blank" rel="noopener">Voir la certification</a>
+              </div>
+            </div>
+
+          </div><!-- /.certif-carousel -->
+        </div><!-- /.certif-carousel-wrapper -->
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-logo">SA<span>.</span></div>
+    <p>© 2026 Samuel Aubron – Développeur Web &amp; Applications</p>
+    <div class="footer-links">
+      <a href="mailto:aubronsamuel06@gmail.com">Email</a>
+      <a href="tel:+33787052349">Tél</a>
+      <a href="https://www.linkedin.com/in/samuel-aubron-757a1b2b6/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Samuel240506" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
